@@ -7,4 +7,7 @@ df=data.frame(x,y)
 
 ggplot(df)+
   geom_point(aes(x,y),size=3,color='red')+
-  theme_bw()
+  theme_bw()+
+  theme(
+    axis.title=element_text(size=25,color='red')
+  )
